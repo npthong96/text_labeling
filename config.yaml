@@ -1,0 +1,14 @@
+dataset:
+  train_set : dataset/DBPEDIA_train.csv
+  val_set   : dataset/DBPEDIA_val.csv
+  test_set  : dataset/DBPEDIA_test.csv
+  stop_words: dataset/stop_words.txt
+
+training:
+  log_dir   : "log_l2"
+  use_label : l2
+  text_len  : 256
+  batch     : 128
+  update_freq : 10
+  epochs    : 1000
+  labels    : labels.txt
