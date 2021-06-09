@@ -47,6 +47,7 @@ def train(args):
     )
     net.fit_generator(
         generator=train_generator,
+        steps_per_epoch=config["training"]["train_steps"],
         epochs=config["training"]["epochs"],
         callbacks=[csv_callback, tensorboard, model_ckpt],
         validation_data=val_generator,

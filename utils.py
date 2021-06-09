@@ -19,7 +19,7 @@ class Text2Vec:
         # Load stop words
         self.load_stop_words()
         # Load word2vec model
-        self.wv = api.load("glove-wiki-gigaword-50")
+        self.wv = api.load("glove-wiki-gigaword-300")
 
     def load_stop_words(self):
         with open(self.config["dataset"]["stop_words"]) as fi:
