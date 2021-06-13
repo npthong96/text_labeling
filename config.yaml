@@ -16,7 +16,8 @@ training:
 
 app:
   host      : "127.0.0.1"
-  port      : "56789"
+  port      : "56788"
   text_len  : 256
-  pretrained: log_l2/weights/0004-0.1552.hdf5
+  gpu_fraction  : 0.8
+  pretrained: pretrained/0004-0.1552.pb
   labels    : log_l2/labels.txt
