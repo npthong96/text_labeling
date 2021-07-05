@@ -31,17 +31,5 @@ Run evaluation using command:
 ```
 python -m training.eval --pretrained [path_to_pb]
 ```
-## III. Run demo
-Pull pretrained: git lfs pull<br>
-Change pb path in config.yaml, line 22<br>
-CHnage file labels.txt path in config.yaml, line 23<br>
-Open new terminal, run server by command:
-```
-python -m app.run_server
-```
-Open new terminal, run inference by command:
-```
-python -m app.infer --text [text to predict] --html [path to wiki page]
-
 
 
